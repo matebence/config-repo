@@ -10,6 +10,25 @@ spring:
     password: 369cb8aedcca0644afa0b1f366c87dbf
     sql-script-encoding: UTF-8
     initialization-mode: always
+  rabbitmq:
+    host: 192.168.99.100
+    port: 5672
+    username: auth_user
+    password: 3bc7c46858e6b89143ff90f1fde9d1d6
+    virtual-host: /authorization
+    listener:
+      simple:
+        retry:
+          enabled: true
+          initial-interval: 3s
+          max-attempts: 6
+          max-interval: 10s
+          multiplier: 2
+  mail:
+    host: 192.168.99.100
+    port: 1025
+    username:
+    password:
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
@@ -57,3 +76,6 @@ config:
                    Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
                    BQIDAQAB
                    -----END PUBLIC KEY-----
+blesk:
+  rabbitmq:
+    authorization-queue: blesk.authorizationQueue
