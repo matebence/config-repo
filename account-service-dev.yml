@@ -10,7 +10,29 @@ spring:
     password: 8a0c0d42d07cd908b58543cc69ee7bf4
     sql-script-encoding: UTF-8
     initialization-mode: always
+  rabbitmq:
+    host: 192.168.99.100
+    port: 5672
+    username: auth_user
+    password: 3bc7c46858e6b89143ff90f1fde9d1d6
+    virtual-host: /authorization
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
     add-mappings: false
+blesk:
+  rabbitmq:
+    authorization-exchange: blesk.authorizationExchange
+    dead-letter-exchange: blesk.deadLetterExchange
+blesk:
+  rabbitmq:
+    authorization-queue: blesk.authorizationQueue
+    dead-letter-queue: blesk.deadLetterQueue
+blesk:
+  rabbitmq:
+    authorization-routing-key: blesk.authorizationRoutingKey
+    dead-letter-routing-key: blesk.deadLetterRoutingKey
+blesk:
+  rabbitmq:
+    dead-letter-routing-key-argument: x-dead-letter-routing-key
+    dead-letter-exchange-argument: x-dead-letter-exchange
