@@ -35,6 +35,5 @@ blesk:
     dead-letter-routing-key: blesk.deadLetterRoutingKey
     dead-letter-routing-key-argument: x-dead-letter-routing-key
     dead-letter-exchange-argument: x-dead-letter-exchange
-blesk:
   javamailer:
     from: no-reply@blesk.sk
