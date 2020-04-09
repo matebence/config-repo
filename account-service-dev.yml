@@ -16,6 +16,11 @@ spring:
     username: auth_user
     password: 3bc7c46858e6b89143ff90f1fde9d1d6
     virtual-host: /authorization
+  mail:
+    host: 192.168.99.100
+    port: 1025
+    username:
+    password: 
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
@@ -30,3 +35,6 @@ blesk:
     dead-letter-routing-key: blesk.deadLetterRoutingKey
     dead-letter-routing-key-argument: x-dead-letter-routing-key
     dead-letter-exchange-argument: x-dead-letter-exchange
+blesk:
+  javamailer:
+    from: no-reply@blesk.sk
