@@ -16,19 +16,11 @@ spring:
     username: auth_user
     password: 3bc7c46858e6b89143ff90f1fde9d1d6
     virtual-host: /authorization
-    listener:
-      simple:
-        retry:
-          enabled: true
-          initial-interval: 3s
-          max-attempts: 6
-          max-interval: 10s
-          multiplier: 2
   mail:
     host: 192.168.99.100
     port: 1025
     username:
-    password:
+    password: 
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
@@ -39,7 +31,7 @@ config:
         client-secret: 04ed73c86f2d48e9789fa2d2bae6acf78bcd9b431d676e5f6d9c9c9a28de29a3
         access-token-validity: 3600
         refresh-token-validity: 18000
-        max-no-try: 3
+        max-attempts: 3
         private-key: -----BEGIN RSA PRIVATE KEY-----
                      MIIEowIBAAKCAQEAwySCnVbkvES/mMHJllnNM5lQ9m26uXbbJzohBhCQyRe/wvuC
                      1UqXDNd45VsgGWk2zZ9/36EH0DZLrrTMR487Xqa+/OWm1ZDlNRKJDBcHv/WWcx1X
@@ -77,5 +69,5 @@ config:
                    BQIDAQAB
                    -----END PUBLIC KEY-----
 blesk:
-  rabbitmq:
-    authorization-queue: blesk.authorizationQueue
+  javamailer:
+    from: no-reply@blesk.sk
