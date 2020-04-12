@@ -16,10 +16,6 @@ spring:
     username: auth_user
     password: 3bc7c46858e6b89143ff90f1fde9d1d6
     virtual-host: /authorization
-  mvc:
-    throw-exception-if-no-handler-found: true
-  resources:
-    add-mappings: false
 security:
   oauth2:
     resource:
