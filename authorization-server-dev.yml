@@ -71,3 +71,4 @@ config:
 blesk:
   javamailer:
     from: no-reply@blesk.sk
+    forget-password-url: http://www.blesk.sk/forgetpassword/account/%s/token/%s
