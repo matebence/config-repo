@@ -69,6 +69,10 @@ config:
                    BQIDAQAB
                    -----END PUBLIC KEY-----
 blesk:
+  oauth2:
+    prefix: ROLE_
   javamailer:
     from: no-reply@blesk.sk
-    forget-password-url: http://www.blesk.sk/forgetpassword/account/%s/token/%s
+    url:
+      forget-password: http://www.blesk.sk/forgetpassword/account/%s/token/%s
+      account-activation: http://www.blesk.sk
