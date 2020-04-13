@@ -75,4 +75,4 @@ blesk:
     from: no-reply@blesk.sk
     url:
       forget-password: http://www.blesk.sk/forgetpassword/account/%s/token/%s
-      account-activation: http://www.blesk.sk
+      account-activation: http://www.blesk.sk/signup/account/%s/token/%s
