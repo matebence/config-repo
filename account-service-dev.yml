@@ -16,6 +16,11 @@ spring:
     username: auth_user
     password: 3bc7c46858e6b89143ff90f1fde9d1d6
     virtual-host: /authorization
+  mail:
+    host: 192.168.99.100
+    port: 1025
+    username:
+    password: 
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
@@ -33,3 +38,9 @@ security:
                    Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
                    BQIDAQAB
                    -----END PUBLIC KEY-----
+blesk:
+  javamailer:
+    from: no-reply@blesk.sk
+    url:
+      forget-password: http://www.blesk.sk/forgetpassword/account/%s/token/%s
+      account-activation: http://www.blesk.sk/signup/account/%s/token/%s
