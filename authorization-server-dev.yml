@@ -63,6 +63,3 @@ config:
                    Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
                    BQIDAQAB
                    -----END PUBLIC KEY-----
-blesk:
-  oauth2:
-    prefix: ROLE_
