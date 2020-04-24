@@ -1,0 +1,8 @@
+server:
+  error:
+    whitelabel:
+      enabled: false
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
