@@ -5,19 +5,19 @@ spring:
     show-sql: true
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://192.168.99.100:5432/account_service
+    url: jdbc:postgresql://postgres:5432/account_service
     username: acc_user
     password: 8a0c0d42d07cd908b58543cc69ee7bf4
     sql-script-encoding: UTF-8
     initialization-mode: always
   rabbitmq:
-    host: 192.168.99.100
+    host: rabbitmq
     port: 5672
     username: auth_user
     password: 3bc7c46858e6b89143ff90f1fde9d1d6
     virtual-host: /authorization
   mail:
-    host: 192.168.99.100
+    host: mailhog
     port: 1025
     username:
     password: 
@@ -28,7 +28,7 @@ spring:
 eureka:
   client:
     service-url:
-      default-zone: http://localhost:8761
+      default-zone: http://naming-server:8761
 security:
   oauth2:
     resource:
