@@ -12,10 +12,10 @@ zuul:
   routes:
     authorization-server:
       path: /authorization-server/**
-      url: http://authorization-server:9090/
+      url: http://authorization-server:9090
     account-service:
       path: /account-service/**
-      url: http://account-service:7000/
+      url: http://account-service:7000
 security:
   oauth2:
     resource:
