@@ -15,7 +15,7 @@ zuul:
 eureka:
   client:
     service-url:
-      default-zone: http://naming-server:8761/eureka
+      defaultZone: http://naming-server:8761/eureka
 security:
   oauth2:
     resource:
