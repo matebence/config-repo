@@ -4,11 +4,18 @@ spring:
   resources:
     add-mappings: false
 zuul:
-  sensitive-headers: Cookie,Set-Cookie
+  sensitiveHeaders: Cookie,Set-Cookie
+  routes:
+    spring-security-oauth-resource:
+      path: /authorization-server/**
+      url: http://authorization-server:9090/
+    oauth:
+      path: /account-service/**
+      url: http://account-service:7000/
 eureka:
   client:
     service-url:
-      default-zone: http://naming-server:8761
+      default-zone: http://naming-server:8761/eureka
 security:
   oauth2:
     resource:
