@@ -28,7 +28,20 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://192.168.99.100:8761/eureka
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: -----BEGIN PUBLIC KEY-----
+                   MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwySCnVbkvES/mMHJllnN
+                   M5lQ9m26uXbbJzohBhCQyRe/wvuC1UqXDNd45VsgGWk2zZ9/36EH0DZLrrTMR487
+                   Xqa+/OWm1ZDlNRKJDBcHv/WWcx1XULS3uC3hvcz/7kFTQTj80vvfhtUOfl7mXMh7
+                   hznvKqB2oe067ZDzigqlDPjBCVpmGC77aHcw7HF4NVnsDki8oHUs9uEB2IHDrcpY
+                   cSUivEwI2cN1mWDSQtoH3WRxHe39nIE748tLatkjvmKLzArugbuWh3his10DAVfU
+                   Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
+                   BQIDAQAB
+                   -----END PUBLIC KEY-----
 blesk:
   javamailer:
     from: no-reply@blesk.sk
