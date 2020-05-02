@@ -35,10 +35,10 @@ hystrix:
             execution:
                 isolation:
                     thread:
-                        timeoutInMilliseconds: 100000
+                        timeoutInMilliseconds: 60000
 ribbon:
-    ConnectTimeout: 100000
-    ReadTimeout: 100000
+    ConnectTimeout: 60000
+    ReadTimeout: 60000
 server:
   error:
     whitelabel:
