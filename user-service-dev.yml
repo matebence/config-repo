@@ -46,3 +46,4 @@ redis:
   database:
     host: 192.168.99.100
     port: 6379
+    password: bae775e59991582c5ac867120f39bf80
