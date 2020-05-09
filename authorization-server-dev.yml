@@ -20,6 +20,8 @@ spring:
     throw-exception-if-no-handler-found: true
   resources:
     add-mappings: false
+  zipkin:
+    base-url: https://192.168.99.100:9411/
 eureka:
   client:
     service-url:
