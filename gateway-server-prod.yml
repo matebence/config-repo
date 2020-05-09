@@ -1,4 +1,10 @@
 spring:
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: app_user
+    password: a880694a8723cc8781afca52be082aa6
+    virtual-host: /messaging
   mvc:
     throw-exception-if-no-handler-found: true
   resources:

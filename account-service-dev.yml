@@ -13,9 +13,9 @@ spring:
   rabbitmq:
     host: 192.168.99.100
     port: 5672
-    username: auth_user
-    password: 3bc7c46858e6b89143ff90f1fde9d1d6
-    virtual-host: /authorization
+    username: app_user
+    password: a880694a8723cc8781afca52be082aa6
+    virtual-host: /messaging
   mail:
     host: 192.168.99.100
     port: 1025

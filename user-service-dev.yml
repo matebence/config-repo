@@ -4,12 +4,18 @@ spring:
       ddl-auto: create
     show-sql: true
   datasource:
-      driverClassName: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://192.168.99.100:3306/user_service
-      username: usr_user
-      password: 260a87a10ddd9dc9e7f04f05d746a532
-      sql-script-encoding: UTF-8
-      initialization-mode: always
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.99.100:3306/user_service
+    username: usr_user
+    password: 260a87a10ddd9dc9e7f04f05d746a532
+    sql-script-encoding: UTF-8
+    initialization-mode: always
+  rabbitmq:
+    host: 192.168.99.100
+    port: 5672
+    username: app_user
+    password: a880694a8723cc8781afca52be082aa6
+    virtual-host: /messaging
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
