@@ -16,7 +16,7 @@ eureka:
     service-url:
       defaultZone: http://192.168.99.100:8761/eureka
 zuul:
-  sensitiveHeaders: Cookie,Set-Cookie,Authorization
+  sensitiveHeaders: Cookie,Set-Cookie
   routes:
     authorization-server:
       path: /authorization-server/**
