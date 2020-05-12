@@ -36,6 +36,15 @@ feign:
     enabled: true
 hystrix:
   shareSecurityContext: true
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 30000
 security:
   oauth2:
     resource:
