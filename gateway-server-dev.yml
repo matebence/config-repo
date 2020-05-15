@@ -27,6 +27,9 @@ zuul:
     user-service:
       path: /user-service/**
       url: http://192.168.99.100:7200
+  tracking-server:
+      path: /tracking-server/**
+      url: http://192.168.99.100:9411
 security:
   oauth2:
     resource:
