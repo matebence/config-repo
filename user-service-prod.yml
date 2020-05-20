@@ -27,6 +27,10 @@ redis:
     host: redis
     port: 6379
     password: bae775e59991582c5ac867120f39bf80
+stripe:
+  key:
+    public: pk_test_xaLxItayDCGCPT4z4gY6Cf2v00CenfvJ1h
+    secret: sk_test_yixMhocXKbGuN17vazjjFlrA005AuN1aff
 eureka:
   client:
     service-url:
