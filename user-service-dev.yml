@@ -16,6 +16,11 @@ spring:
     username: track_user
     password: e19e0344779bf3cfa03f1cc2e98bd424
     virtual-host: /inspection
+  mail:
+    host: 192.168.99.100
+    port: 1025
+    username:
+    password: 
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
@@ -62,3 +67,6 @@ security:
                    Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
                    BQIDAQAB
                    -----END PUBLIC KEY-----
+blesk:
+  javamailer:
+    from: no-reply@blesk.sk
