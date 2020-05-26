@@ -27,6 +27,9 @@ zuul:
     user-service:
       path: /user-service/**
       url: http://user-service:7200
+    messaging-service:
+      path: /messaging-service/**
+      url: http://messaging-service:7400
 security:
   oauth2:
     resource:
