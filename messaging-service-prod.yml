@@ -1,0 +1,36 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      database: messaging_service
+      host: mongo
+      port: 27017
+      username: msg_user
+      password: 5396ffd132678e2213ddb83c6bde40f6
+      uri: mongodb://msg_user:5396ffd132678e2213ddb83c6bde40f6@mongo:27017
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  zipkin:
+    base-url: http://app-blesk-tracking-server:59fe09743cb9ef59276464f81734a003@tracking-server:9411/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://app-blesk-naming-server:b1477e9ba7723b8f47e9727a39a51edf@naming-server:8761/eureka
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: -----BEGIN PUBLIC KEY-----
+                   MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwySCnVbkvES/mMHJllnN
+                   M5lQ9m26uXbbJzohBhCQyRe/wvuC1UqXDNd45VsgGWk2zZ9/36EH0DZLrrTMR487
+                   Xqa+/OWm1ZDlNRKJDBcHv/WWcx1XULS3uC3hvcz/7kFTQTj80vvfhtUOfl7mXMh7
+                   hznvKqB2oe067ZDzigqlDPjBCVpmGC77aHcw7HF4NVnsDki8oHUs9uEB2IHDrcpY
+                   cSUivEwI2cN1mWDSQtoH3WRxHe39nIE748tLatkjvmKLzArugbuWh3his10DAVfU
+                   Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
+                   BQIDAQAB
+                   -----END PUBLIC KEY-----
+blesk:
+  firebase:
+    configuration-file: fcm.initializr.json
