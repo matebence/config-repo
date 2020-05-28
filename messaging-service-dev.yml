@@ -8,6 +8,12 @@ spring:
       username: msg_user
       password: 5396ffd132678e2213ddb83c6bde40f6
       uri: mongodb://msg_user:5396ffd132678e2213ddb83c6bde40f6@192.168.99.100:27017
+  rabbitmq:
+    host: 192.168.99.100
+    port: 5672
+    username: track_user
+    password: e19e0344779bf3cfa03f1cc2e98bd424
+    virtual-host: /inspection
   mvc:
     throw-exception-if-no-handler-found: true
   resources:
