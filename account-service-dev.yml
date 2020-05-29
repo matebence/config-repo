@@ -1,5 +1,10 @@
 spring:
   jpa:
+    properties:
+      javax:
+        persistence:
+          validation:
+            mode: none
     hibernate:
       ddl-auto: create-drop
     show-sql: true
