@@ -48,5 +48,6 @@ blesk:
   javamailer:
     from: no-reply@blesk.sk
     url:
+      application-login: http://www.blesk.sk/signin
       forget-password: http://www.blesk.sk/forgetpassword/account/%s/token/%s
       account-activation: http://www.blesk.sk/signup/account/%s/token/%s
