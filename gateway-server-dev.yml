@@ -30,6 +30,9 @@ zuul:
     messaging-service:
       path: /messaging-service/**
       url: http://192.168.99.100:7400
+    place-service:
+      path: /place-service/**
+      url: http://192.168.99.100:5000
 security:
   oauth2:
     resource:
