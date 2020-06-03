@@ -9,11 +9,6 @@ node:
     dialect: mysql
     charset: utf8
     encoding: utf8_general_ci
-    pool:
-      max: 5
-      min: 0
-      acquire: 30000
-      idle: 10000
   eureka:
     host: app-blesk-naming-server:b1477e9ba7723b8f47e9727a39a51edf@192.168.99.100
     port: 8761
