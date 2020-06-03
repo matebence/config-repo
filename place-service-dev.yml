@@ -1,0 +1,24 @@
+node:
+  sequelize:
+    create-drop: true
+  datasource:
+    host: 192.168.99.100
+    database: place_service
+    username: plc_user
+    password: 7f56c92e9461f07fbcc2ddbef875d120
+    dialect: mysql
+    charset: utf8
+    encoding: utf8_general_ci
+    pool:
+      max: 5
+      min: 0
+      acquire: 30000
+      idle: 10000
+  eureka:
+    app: PLACE-SERVICE
+    vip-address: place-service
+    host: app-blesk-naming-server:b1477e9ba7723b8f47e9727a39a51edf@192.168.99.100
+    port: 8761
+    service-path: /eureka/apps/
+  zipkin:
+    base-url: http://app-blesk-tracking-server:59fe09743cb9ef59276464f81734a003@192.168.99.100:9411
