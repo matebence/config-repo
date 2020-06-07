@@ -33,6 +33,18 @@ zuul:
     place-service:
       path: /place-service/**
       url: http://192.168.99.100:5000
+    warehouse-service:
+      path: /warehouse-service/**
+      url: http://192.168.99.100:5400
+    vehicle-service:
+      path: /vehicle-service/**
+      url: http://192.168.99.100:5200
+    shipment-service:
+      path: /shipment-service/**
+      url: http://192.168.99.100:5600
+    parcel-service:
+      path: /parcel-service/**
+      url: http://192.168.99.100:5800
 security:
   oauth2:
     resource:
