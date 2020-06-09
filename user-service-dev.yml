@@ -39,8 +39,8 @@ redis:
     password: bae775e59991582c5ac867120f39bf80
 stripe:
   key:
-    public: pk_test_xaLxItayDCGCPT4z4gY6Cf2v00CenfvJ1h
-    secret: sk_test_yixMhocXKbGuN17vazjjFlrA005AuN1aff
+    public: pk_test_51Gs4j4KeDkPznmYygfxMZvAaqll3yvylXlEMwihtyJySScYQEvQkVCuPAIYQcY5EA2AnBRLXB8KOfa9HOiPPyc3a008MI5W1vi
+    secret: sk_test_51Gs4j4KeDkPznmYy6DHxUvPv2GkERMBYyEXA0WQAqagpvKgyDBqbjkySfbWaWPfnOfRSyzLsaflXj42YyWEMjPy6002yrUaovU
 eureka:
   client:
     service-url:
