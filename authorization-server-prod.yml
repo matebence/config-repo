@@ -33,6 +33,7 @@ config:
         access-token-validity: 3600
         refresh-token-validity: 18000
         max-attempts: 3
+        block-account: 20
         private-key: -----BEGIN RSA PRIVATE KEY-----
                      MIIEowIBAAKCAQEAwySCnVbkvES/mMHJllnNM5lQ9m26uXbbJzohBhCQyRe/wvuC
                      1UqXDNd45VsgGWk2zZ9/36EH0DZLrrTMR487Xqa+/OWm1ZDlNRKJDBcHv/WWcx1X
