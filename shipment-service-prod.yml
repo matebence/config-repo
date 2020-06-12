@@ -8,6 +8,11 @@ node:
     username: shp_user
     password: 916d95a7b843b82eb928d0144fe83dfe
     driver: mongodb
+  mail:
+    host: mailhog
+    port: 1025
+    username:
+    password: 
   eureka:
     host: app-blesk-naming-server:b1477e9ba7723b8f47e9727a39a51edf@naming-server
     port: 8761
@@ -25,3 +30,8 @@ node:
                  Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
                  BQIDAQAB
                  -----END PUBLIC KEY-----
+blesk:
+  nodemailer:
+    from: no-reply@blesk.sk
+    url:
+      application-login: http://www.blesk.sk/signin

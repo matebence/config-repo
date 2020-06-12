@@ -9,6 +9,11 @@ node:
     dialect: postgres
     charset: utf8
     encoding: utf8_general_ci
+  mail:
+    host: 192.168.99.100
+    port: 1025
+    username:
+    password: 
   eureka:
     host: app-blesk-naming-server:b1477e9ba7723b8f47e9727a39a51edf@192.168.99.100
     port: 8761
@@ -26,3 +31,8 @@ node:
                  Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
                  BQIDAQAB
                  -----END PUBLIC KEY-----
+blesk:
+  nodemailer:
+    from: no-reply@blesk.sk
+    url:
+      application-login: http://www.blesk.sk/signin
