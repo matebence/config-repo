@@ -9,6 +9,15 @@ node:
     dialect: postgres
     charset: utf8
     encoding: utf8_general_ci
+    redis:
+      host: 192.168.99.100
+      port: 6379
+      password: bae775e59991582c5ac867120f39bf80
+  resilient:
+    basePath: /api
+    retry: 3
+    waitBeforeRetry: 500
+    timeout: 5000
   mail:
     host: 192.168.99.100
     port: 1025
