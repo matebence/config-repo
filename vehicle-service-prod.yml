@@ -8,6 +8,15 @@ node:
     username: vhe_user
     password: 87ccc6bc5dcf2ce04614130fcdf06a03
     driver: mongodb
+    redis:
+      host: redis
+      port: 6379
+      password: bae775e59991582c5ac867120f39bf80
+  resilient:
+    basePath: /api
+    retry: 3
+    waitBeforeRetry: 500
+    timeout: 5000
   eureka:
     host: app-blesk-naming-server:b1477e9ba7723b8f47e9727a39a51edf@naming-server
     port: 8761
