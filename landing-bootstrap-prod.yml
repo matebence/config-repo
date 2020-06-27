@@ -1,0 +1,8 @@
+node:
+  mobile:
+    signin: http://pwa-react/signin
+    signup: http://pwa-react/signup
+  desktop:
+    signin: http://web-vue/signin
+    signup: http://web-vue/signup
+    manage: http://admin-angular/signin
