@@ -72,3 +72,8 @@ server:
   error:
     whitelabel:
       enabled: false
+blesk:
+  cors:
+    allowed:
+      origins: "http://pwa-react:4200/, http://web-vue:4300/, http://admin-angular:4400/"
+      methods: "HEAD, GET, PUT, POST, DELETE, PATCH"
