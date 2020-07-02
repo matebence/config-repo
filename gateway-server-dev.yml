@@ -75,5 +75,5 @@ server:
 blesk:
   cors:
     allowed:
-      origins: "localhost, "
+      origins: "http://localhost:4200, http://localhost:4300, http://localhost:4400"
       methods: "HEAD, GET, PUT, POST, DELETE, PATCH"
