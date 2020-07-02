@@ -1,8 +1,7 @@
 node:
-  mobile:
-    signin: http://192.168.99.100:4200/signin
-    signup: http://192.168.99.100:4200/signup
+  mobile: 
+    host: 192.168.99.100:4200
   desktop:
-    signin: http://192.168.99.100:4300/signin
-    signup: http://192.168.99.100:4300/signup
-    manage: http://192.168.99.100:4400/signin
+    host: 192.168.99.100:4300
+  management:
+    host: 192.168.99.100:4400

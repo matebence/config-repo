@@ -44,4 +44,4 @@ blesk:
   nodemailer:
     from: no-reply@blesk.sk
     url:
-      application-login: http://www.blesk.sk/signin
+      application-login: http://192.168.99.100:4100/sign-in
