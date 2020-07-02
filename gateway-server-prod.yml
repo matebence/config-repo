@@ -75,5 +75,5 @@ server:
 blesk:
   cors:
     allowed:
-      origins: "pwa-react, web-vue, admin-angular"
+      origins: "http://pwa-react:4200, http://web-vue:4300, http://admin-angular:4400"
       methods: "HEAD, GET, PUT, POST, DELETE, PATCH"
