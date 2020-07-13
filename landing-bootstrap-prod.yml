@@ -1,7 +1,0 @@
-node:
-  mobile: 
-    host: pwa-react
-  desktop:
-    host: web-vue
-  management:
-    host: admin-angular
