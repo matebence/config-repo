@@ -58,15 +58,9 @@ security:
                    Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
                    BQIDAQAB
                    -----END PUBLIC KEY-----
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 50000
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 50000
 ribbon:
-  ConnectTimeout: 50000
+  ConnectTimeout: 3000
   ReadTimeout: 50000
 server:
   error:
