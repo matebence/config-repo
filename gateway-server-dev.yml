@@ -70,7 +70,7 @@ blesk:
   cors:
     allowed:
       origins: "http://localhost:4200, http://localhost:4300, http://localhost:4400"
-      headers: "X-Requested-With, Origin, Content-Type, Accept, Authorization, X-Auth-Token"
+      headers: "X-Frame-Options, X-Requested-With, Origin, Content-Type, Accept, Authorization, X-Auth-Token"
       methods: "HEAD, GET, PUT, POST, DELETE, PATCH, OPTIONS"
       exposed: "X-Auth-Token, Authorization"
       age: 3600
