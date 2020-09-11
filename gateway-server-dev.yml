@@ -72,3 +72,4 @@ blesk:
       origins: "http://localhost:4200, http://localhost:4300, http://localhost:4400"
       headers: "Forwarded, X-Forwarded-Port, X-Forwarded-Host, X-Requested-With, Origin, Content-Type, Accept, Authorization"
       methods: "HEAD, GET, PUT, POST, DELETE, PATCH"
+      age: 3600
