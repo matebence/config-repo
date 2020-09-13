@@ -58,7 +58,11 @@ security:
                    Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
                    BQIDAQAB
                    -----END PUBLIC KEY-----
+feign:
+  hystrix:
+    enabled: true
 hystrix:
+  shareSecurityContext: true
   command:
     default:
       execution:
@@ -68,10 +72,6 @@ hystrix:
 ribbon:
   ConnectTimeout: 50000
   ReadTimeout: 50000
-server:
-  error:
-    whitelabel:
-      enabled: false
 blesk:
   cors:
     allowed:
