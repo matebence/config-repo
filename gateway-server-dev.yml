@@ -78,3 +78,5 @@ blesk:
       origins: "http://localhost:4200, http://localhost:4300, http://localhost:4400"
       headers: "X-Requested-With, Origin, Content-Type, Accept, Authorization"
       methods: "HEAD, GET, PUT, POST, DELETE, PATCH, OPTIONS"
+  firebase:
+    configuration-file: fcm.initializr.json
