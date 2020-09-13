@@ -58,9 +58,15 @@ security:
                    Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
                    BQIDAQAB
                    -----END PUBLIC KEY-----
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 50000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 50000
 ribbon:
-  ConnectTimeout: 3000
+  ConnectTimeout: 50000
   ReadTimeout: 50000
 server:
   error:
@@ -71,7 +77,5 @@ blesk:
     allowed:
       # origins: "http://pwa-react:4200, http://web-vue:4300, http://admin-angular:4400"
       origins: "http://localhost:4200, http://localhost:4300, http://localhost:4400"
-      headers: "X-Frame-Options, X-Requested-With, Origin, Content-Type, Accept, Authorization, X-Auth-Token"
+      headers: "X-Requested-With, Origin, Content-Type, Accept, Authorization"
       methods: "HEAD, GET, PUT, POST, DELETE, PATCH, OPTIONS"
-      exposed: "X-Auth-Token, Authorization"
-      age: 3600
