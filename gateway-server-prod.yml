@@ -73,7 +73,6 @@ server:
     whitelabel:
       enabled: false
 blesk:
-  server-key: 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dpbl9pZCI6MSwiYWNjb3VudF9pZCI6MSwidXNlcl9uYW1lIjoic3lzdGVtIiwic2NvcGUiOlsidHJ1c3QiXSwiYXV0aG9yaXRpZXMiOlsiUk9MRV9TWVNURU0iXSwianRpIjoiZWM3ZmE5ZGItZmY0MS00NmU4LWI4OTctMDI1YWE1YWFlMWQ2IiwiY2xpZW50X2lkIjoiOGRlNGRjNTYtNmU5Ni0xMWVhLWJjNTUtMDI0MmFjMTMwMDAzIiwiYWN0aXZhdGVkIjp0cnVlfQ.KzxBtlmKOliwE8tdbeBgXgWb3vlcRp4-x4vmVA-2wI4GfWtK1d-Ax4QQDImOqhnRNh81H9H0SxPYaurSo_RJUpt35iXUSmIp5rizGXAj3xge9tf5o1jeZcVmuipzoZzF46cdnakmjaOk3fwerX50p_egO62ew8DdUgcpNpz7cyZH7-0ebAziYNibaka0s5NwksEhrFmK1BAxu-8_couQI3R5E_veygCnA92i6gkO-4BQS342vnHgpI31QT5lm9BG_KM6ADqDFYwD_JCRCVeUzQymP2YL3jOlDsdJ_p5vzNjGDrJIfSwMPDL-sIGZ9QbyXL7ffgbIiga1XI3qJ6UcGA'
   cors:
     allowed:
       # origins: "http://pwa-react:4200, http://web-vue:4300, http://admin-angular:4400"
