@@ -58,11 +58,7 @@ security:
                    Lg3kLRDtIBadvxxRZPqjyeSjFL0ti8yO4Dahyg4iDrBhY2Xc9kUeZssRxETbxmu0
                    BQIDAQAB
                    -----END PUBLIC KEY-----
-feign:
-  hystrix:
-    enabled: true
 hystrix:
-  shareSecurityContext: true
   command:
     default:
       execution:
