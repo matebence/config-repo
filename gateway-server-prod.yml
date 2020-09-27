@@ -71,7 +71,7 @@ ribbon:
 blesk:
   cors:
     allowed:
-      origins: "http://landing-bootstrap:4100"
+      origins: "http://localhost:4100"
       headers: "X-Requested-With, Origin, Content-Type, Accept, Authorization"
       methods: "HEAD, GET, PUT, POST, DELETE, PATCH, OPTIONS"
   firebase:
