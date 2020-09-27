@@ -45,4 +45,4 @@ blesk:
   nodemailer:
     from: no-reply@blesk.sk
     url:
-      application-login: http://landing-bootstrap:4100/sign-in
+      application-login: http://localhost:4100/sign-in

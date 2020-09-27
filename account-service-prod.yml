@@ -49,6 +49,6 @@ blesk:
   javamailer:
     from: no-reply@blesk.sk
     url:
-      application-login: http://landing-bootstrap:4100/sign-in
-      forget-password: http://landing-bootstrap:4100/forget-password/account/%s/token/%s
-      account-activation: http://landing-bootstrap:4100/sign-up/account/%s/token/%s
+      application-login: http://localhost:4100/sign-in
+      forget-password: http://localhost:4100/forget-password/account/%s/token/%s
+      account-activation: http://localhost:4100/sign-up/account/%s/token/%s
