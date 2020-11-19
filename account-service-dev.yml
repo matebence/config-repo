@@ -50,8 +50,8 @@ blesk:
     from: no-reply@blesk.sk
     url:
       management:
-        application-login: http://localhost:4100/auth/sign-in
-        forget-password: http://localhost:4100/auth/forget-password/account/%s/token/%s
+        application-login: http://localhost:4100/manage/auth/sign-in
+        forget-password: http://localhost:4100/manage/auth/forget-password/account/%s/token/%s
       application-login: http://localhost:4100/sign-in
       forget-password: http://localhost:4100/forget-password/account/%s/token/%s
       account-activation: http://localhost:4100/sign-up/account/%s/token/%s
